@@ -6,5 +6,7 @@ Meanwhile it has two extra master-slave communication nodes which can be used in
 
 Some parts of the code are modified from https://github.com/mavlink/c_uart_interface_example
 
+Limitations: this proxy can only convert about 5 often-used topics now, Because increasing the number of topics is a simple physical task.
+
 Ignore my Chinglish.
 
