@@ -1,2 +1,8 @@
 # ROS_mavlink_proxy_no_wrapper
-a simple proxy between ROS and mavlink without any wrapper.
+A simple proxy between ROS and mavlink without any wrapper. That means the proxy will convert anything it received. 
+And the most important thing is that the code is easy to read and modify.
+
+Meanwhile it has two master-slave communication nodes which can be used in a scenario that only a half-duplex broadcasting network is equiped.
+
+Ignore my Chinglish.
+
