@@ -1,0 +1,8 @@
+prefix=/home/myros/PX4learn/ROS_mavlink_proxy/devel
+
+Name: ros_mavlink_proxy
+Description: Description of ros_mavlink_proxy
+Version: 0.0.0
+Cflags: -I/home/myros/PX4learn/ROS_mavlink_proxy/devel/include
+Libs: -L/home/myros/PX4learn/ROS_mavlink_proxy/devel/lib 
+Requires: roscpp std_msgs rospy message_runtime

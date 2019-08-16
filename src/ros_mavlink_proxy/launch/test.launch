@@ -1,0 +1,10 @@
+<launch>
+    <node pkg="ros_mavlink_proxy" type="talker" name="talker1" output='screen'>
+        <remap from="/talker1/from/set_position_target_local_NED" to="/same_lan1"/>
+    </node>
+    <node pkg="ros_mavlink_proxy" type="listener" name="listener1" output='screen'>
+        <remap from="/listener1/to/set_position_target_local_NED" to="/same_lan1"/>
+    </node>
+
+
+</launch>

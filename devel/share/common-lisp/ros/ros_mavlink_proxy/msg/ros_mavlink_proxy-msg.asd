@@ -1,0 +1,28 @@
+
+(cl:in-package :asdf)
+
+(defsystem "ros_mavlink_proxy-msg"
+  :depends-on (:roslisp-msg-protocol :roslisp-utils :std_msgs-msg
+)
+  :components ((:file "_package")
+    (:file "Altitude" :depends-on ("_package_Altitude"))
+    (:file "_package_Altitude" :depends-on ("_package"))
+    (:file "Attitude" :depends-on ("_package_Attitude"))
+    (:file "_package_Attitude" :depends-on ("_package"))
+    (:file "CommandLong" :depends-on ("_package_CommandLong"))
+    (:file "_package_CommandLong" :depends-on ("_package"))
+    (:file "GlobalPositionINT" :depends-on ("_package_GlobalPositionINT"))
+    (:file "_package_GlobalPositionINT" :depends-on ("_package"))
+    (:file "Heartbeat" :depends-on ("_package_Heartbeat"))
+    (:file "_package_Heartbeat" :depends-on ("_package"))
+    (:file "HighresIMU" :depends-on ("_package_HighresIMU"))
+    (:file "_package_HighresIMU" :depends-on ("_package"))
+    (:file "LocalPositionNED" :depends-on ("_package_LocalPositionNED"))
+    (:file "_package_LocalPositionNED" :depends-on ("_package"))
+    (:file "SetPositionTargetGlobalINT" :depends-on ("_package_SetPositionTargetGlobalINT"))
+    (:file "_package_SetPositionTargetGlobalINT" :depends-on ("_package"))
+    (:file "SetPositionTargetLocalNED" :depends-on ("_package_SetPositionTargetLocalNED"))
+    (:file "_package_SetPositionTargetLocalNED" :depends-on ("_package"))
+    (:file "polling_or_sendstream" :depends-on ("_package_polling_or_sendstream"))
+    (:file "_package_polling_or_sendstream" :depends-on ("_package"))
+  ))

@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/myros/PX4learn/ROS_mavlink_proxy/devel/setup.sh

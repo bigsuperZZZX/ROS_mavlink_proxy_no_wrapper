@@ -1,0 +1,10 @@
+<launch>
+    <node pkg="ros_mavlink_proxy" type="proxy_node" name="proxy_node" output='screen'>
+        <param name="uart_name" value="/dev/ttyUSB0" />
+        <param name="baudrate" value="115200" />
+        <param name="system_id" value="1" />
+        <param name="component_id" value="1" />
+        <param name="fcu_protocol" value="v2.0" />
+    </node>
+
+</launch>
